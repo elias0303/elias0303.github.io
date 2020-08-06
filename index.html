@@ -1,1 +1,280 @@
-Hello
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bahir dar University Applications Portal</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0"
+    />
+    <title>Bahir dar University</title>
+    <link rel="stylesheet" href="\styles.css" />
+    <link rel="stylesheet" href="\Icons.css" />
+    <script>
+      window.console = window.console || function (t) {};
+    </script>
+    <script>
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage("resize", "*");
+      }
+    </script>
+  </head>
+  <body translate="no">
+    <nav class="light-blue darken-3" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo"
+          >Bahir-Dar-University</a
+        >
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#"></a></li>
+        </ul>
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="#"></a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"
+          ><i class="material-icons">menu</i></a
+        >
+      </div>
+    </nav>
+    <div class="section no-pad-bot" id="index-banner">
+      <div class="container">
+        <br /><br />
+        <h1 class="header center blue-grey-text">
+          Bahir dar University Application Portal
+        </h1>
+        <p class="row center grey-text">
+          Click below button or the Image to Access any application from one
+          place.
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="section">
+        <div class="row">
+          <div class="col m4 s12 l4">
+            <div class="card z-depth-2">
+              <div
+                class="card-image blue lighten-3 waves-effect waves-block waves-light"
+              >
+                <img
+                  alt="Product Image"
+                  class="activator responsive-img"
+                  src="\SIMSLogo400x200.png"
+                />
+              </div>
+              <div class="card-content">
+                <span
+                  class="card-title activator grey-text text-darken-4 truncate"
+                  >SIMS<i class="material-icons right">more_vert</i></span
+                >
+                <h6>
+                  <b></b>
+                  <i
+                    >Integrated Software that automates the following Student
+                    related Business Processes of a University</i
+                  >
+                </h6>
+              </div>
+              <div class="card-action center blue-grey lighten-4">
+                <a
+                  class="btn-floating btn-large waves-effect waves-light blue darken-1"
+                  href="https://10.1.20.10/"
+                  target="_blank"
+                  ><i class="material-icons">open_in_new</i></a
+                >
+              </div>
+              <div class="card-reveal">
+                <span class="card-title blue-text text-darken-3"
+                  >Full Details<i class="material-icons right">close</i></span
+                >
+                <div class="divider"></div>
+                <p><b>Product ID: </b> <% product.productID %></p>
+                <div class="divider"></div>
+                <p><b>Fullname: </b> <% product.name %></p>
+                <div class="divider"></div>
+                <p><b>Price: </b> <% product.price %></p>
+                <div class="divider"></div>
+                <p><b>Currency: </b> <% product.currency %></p>
+                <div class="divider"></div>
+                <p><b>Categories: </b></p>
+                <ul class="collection">
+                  <li
+                    ng-repeat="category in product.categories"
+                    class="collection-item"
+                  >
+                    <% category %>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col m4 s12 l4">
+            <div class="card z-depth-2">
+              <div
+                class="card-image deep-purple lighten-3 waves-effect waves-block waves-light"
+              >
+                <img
+                  alt="Product Image"
+                  class="activator responsive-img"
+                  src="\bduLogo400x200.png"
+                />
+              </div>
+              <div class="card-content">
+                <span
+                  class="card-title activator grey-text text-darken-4 truncate"
+                  >StudentInfo<i class="material-icons right"
+                    >more_vert</i
+                  ></span
+                >
+                <h6>
+                  <b></b>
+                  <i
+                    >Enables Students to access their Academic related
+                    Information.
+                  </i>
+                </h6>
+              </div>
+              <div class="card-action blue-grey lighten-4 center">
+                <a
+                  class="btn-floating btn-large waves-effect waves-light blue darken-1"
+                  href="https://studentinfo.bdu.edu.et/"
+                  target="_blank"
+                  ><i class="material-icons">open_in_new</i></a
+                >
+              </div>
+              <div class="card-reveal">
+                <span class="card-title blue-text text-darken-3"
+                  >Full Details<i class="material-icons right">close</i></span
+                >
+                <div class="divider"></div>
+                <p><b>Product ID: </b> <% product.productID %></p>
+                <div class="divider"></div>
+                <p><b>Fullname: </b> <% product.name %></p>
+                <div class="divider"></div>
+                <p><b>Price: </b> <% product.price %></p>
+                <div class="divider"></div>
+                <p><b>Currency: </b> <% product.currency %></p>
+                <div class="divider"></div>
+                <p><b>Categories: </b></p>
+                <ul class="collection">
+                  <li
+                    ng-repeat="category in product.categories"
+                    class="collection-item"
+                  >
+                    <% category %>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col m4 s12 l4">
+            <div class="card z-depth-2">
+              <div
+                class="card-image cyan lighten-3 waves-effect waves-block waves-light"
+              >
+                <img
+                  alt="Product Image"
+                  class="activator responsive-img"
+                  src="\SIMSLogo400x200.png"
+                />
+              </div>
+              <div class="card-content">
+                <span
+                  class="card-title activator grey-text text-darken-4 truncate"
+                  >Procurment<i class="material-icons right">more_vert</i></span
+                >
+                <h6>
+                  <b></b>
+                  <i>It automate the fainance Procurment business process </i>
+                </h6>
+              </div>
+              <div class="card-action center blue-grey lighten-4">
+                <a
+                  class="btn-floating btn-large waves-effect waves-light blue darken-1"
+                  href=""
+                  target="_blank"
+                  ><i class="material-icons">open_in_new</i></a
+                >
+              </div>
+              <div class="card-reveal">
+                <span class="card-title blue-text text-darken-3"
+                  >Full Details<i class="material-icons right">close</i></span
+                >
+                <div class="divider"></div>
+                <p><b>Product ID: </b> <% product.productID %></p>
+                <div class="divider"></div>
+                <p><b>Fullname: </b> <% product.name %></p>
+                <div class="divider"></div>
+                <p><b>Price: </b> <% product.price %></p>
+                <div class="divider"></div>
+                <p><b>Currency: </b> <% product.currency %></p>
+                <div class="divider"></div>
+                <p><b>Categories: </b></p>
+                <ul class="collection">
+                  <li
+                    ng-repeat="category in product.categories"
+                    class="collection-item"
+                  >
+                    <% category %>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br /><br />
+    </div>
+    <footer class="page-footer blue-grey">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Bahir dar University</h5>
+            <p class="grey-text text-lighten-4">
+              Bahir Dar University was established by merging two former higher
+              education institutions; namely the Bahir Dar Polytechnic and Bahir
+              Dar Teachers’ College. The Bahir Dar Polytechnic Institute, which
+              has transformed itself into Technology and Textile institutes, was
+              established in 1963 under the technical cooperation between the
+              Government of USSR and the Imperial Government of Ethiopia. The
+              institute was a premier institute in producing technicians for the
+              nation.
+            </p>
+          </div>
+
+          <div class="col l3 s12 center">
+            <h5 class="white-text">Important Links</h5>
+            <ul>
+              <li>
+                <a class="white-text" href="https://www.bdu.edu.et"
+                  >BDU WebSite</a
+                >
+              </li>
+              <li>
+                <a class="white-text" href="https://bdu.edu.et/node/193"
+                  >Information desk</a
+                >
+              </li>
+              <li>
+                <a class="white-text" href="https://mail.bdu.edu.et/"
+                  >BDU Mail</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          Copyright
+          <a href="https://www.bdu.edu.et" class="cyan-text"
+            >Bahir-Dar-University</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+  </body>
+</html>
